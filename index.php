@@ -5,7 +5,7 @@
     </head>
     <body>
 
-        <form method="post">
+        <form method="get">
             <input type="number" name="num1" placeholder="Number1">
             <input type="number" name="num2" placeholder="Number2">
             <select name="operator">
@@ -23,11 +23,11 @@
 
         <?php
 
-            if (isset($_POST['submit'])) {
+            if (isset($_GET['submit'])) {
 
-                $num1 = $_POST['num1'];
-                $num2 = $_POST['num2'];
-                $operator = $_POST['operator'];
+                $num1 = $_GET['num1'];
+                $num2 = $_GET['num2'];
+                $operator = $_GET['operator'];
 
                 switch ($operator) {
 
